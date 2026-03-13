@@ -29,4 +29,5 @@ print(head * 2)
 print("=" * 5)
 
 #문자열 인덱싱
-a = 
+a = "Now is better than never"
+print(a[0])
