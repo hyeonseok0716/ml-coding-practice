@@ -43,3 +43,25 @@ print(a[4:6])
 print(a[19:])
 print(a[:3])
 print(a[7:-11])
+
+# 문자 개수 계산
+a = "Python"
+print(a.count('P'))
+
+# 문자 위치 확인
+print(a.find('y'))
+print(a.find('p'))
+print(a.index('y'))
+# print(a.index('p)) # 오류 발생
+
+# 문자 삽입
+b = ","
+c = b.join('Abcd')
+print(c)
+
+# 대소문자 변환
+print(a.upper)
+print(a.lower)
+
+# 공백 제거
+d = "           "
