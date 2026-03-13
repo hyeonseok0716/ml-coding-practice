@@ -207,3 +207,9 @@ for key in dic.keys():
 # value의 리스트 만들기
 print(dic.values())
 print(list(dic.values()))
+
+# key, value 쌍 구하기
+print(dic.items())
+
+for key, value in dic.items():
+    print(key + ":" + )
