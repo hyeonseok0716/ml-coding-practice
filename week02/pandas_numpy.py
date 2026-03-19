@@ -115,5 +115,7 @@ print(iris['class'].value_counts())
 
 # 예제 데이터 생성
 data = {
-    'name': [ ]
+    'name': ['Alice', 'Bob', 'Charlie', 'David', 'Eve'],
+    'age': [25, 30, 35, 28, 40],
+    'salary': [70000]
 }
