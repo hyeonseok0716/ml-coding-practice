@@ -96,3 +96,5 @@ print(sample_df.set_index('var_1'))
 print(sample_df.describe())
 print(sample_df.std())
 print(sample_df.agg(['count','meen', 'std', 'min', 'max']))
+
+file_url = 'https://media.githubuserontent.com/media/musthave_ML10/data_source/main/iris.csv'
