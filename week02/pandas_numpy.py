@@ -29,6 +29,12 @@ print(sample_df['var_5'])
 print(sample_df[['var_1', 'var_4']])   # [ [] ]를 사용하면 []가 하나의 값으로 인식됨
 
 # loc 는 location의 앞글자
-print(sample_df.loc['a'])               
+print(sample_df.loc['a'])              # 행 기준으로 인덱싱          
 print(sample_df.loc[['a','c','e']])
 print(sample_df.loc['a':'c'])
+
+# iloc: integer location의 약자
+print(sample_df.iloc[[0,1,2]])
+print(sample_df.iloc[0:2])
+print(sample_df.iloc[0:3])
+print(sample_df.iloc[0:3, 2:4])        # 컬럼까지 동시에 인덱싱
