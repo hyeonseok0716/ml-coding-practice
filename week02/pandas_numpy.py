@@ -1,4 +1,4 @@
 import pandas as pd
 
-file_ur1 = 'https://media.githubusercontent.com/media/musthave-ML10/data_source/main/sample.csv'
-sample = pd.read_csv(file_ur1)
+file_url = 'https://media.githubusercontent.com/media/musthave-ML10/data_source/main/sample.csv'
+sample = pd.read_csv(file_url)
