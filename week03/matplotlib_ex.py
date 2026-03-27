@@ -31,4 +31,4 @@ plt.ylabel('Survival Rate')
 plt.xticks([1, 2, 3])
 plt.grid(True)
 plt.savefig('Figure01.png')         # 결과를 그림파일로 저장
-plt.close()
+plt.close()            
