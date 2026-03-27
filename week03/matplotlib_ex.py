@@ -107,4 +107,11 @@ print(survived_counts)
 
 # 파이 차트 그리기
 plt.figure(figsize=(8, 8))
-plt.pie(survived_counts, labels=['Not Survived', 'Survived'], colors=['orange', 'gold'])
+plt.pie(survived_counts, labels=['Not Survived', 'Survived'], colors=['orange', 'gold'],
+        autopct='%0.1f%%', startangle=90, shadow=True, explode=(0, 0.1))
+
+plt.title('Survival Distribution on the Titanic')
+plt.savefig('Figure05.png')
+plt.close()
+
+"""### **히스토그램 : 승객의 나이 분포 표시하기**"""
