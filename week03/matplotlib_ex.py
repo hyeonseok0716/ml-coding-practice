@@ -233,7 +233,7 @@ plt.legend(violin_plot['bodies'], ['1st Class', '2nd Class', '3rd Class'],
 plt.savefig('Figure10.png')
 plt.close()
 
-## **에러 바: 요금의 평균과 표준편차 표현하기**
+## **에러 바 : 요금의 평균과 표준편차 표현하기**
 
 # 각 부모와 자녀의 수에 대한 요금의 평균과 표준 편차 계산
 fare_means = titanic.groupby('Parch')['Fare'].mean()  # 평균
@@ -328,7 +328,7 @@ axes[1, 1].plot([10, 11, 12])
 plt.savefig('Figure14.png')
 plt.close()
 
-## **타이타닉 데이터셋을 개별 서브플롯 동시에 그리기**
+## **타이타닉 데이터셋으로 개별 서브플롯 동시에 그리기**
 
 # 각 부모와 자녀의 수에 따른 생존자와 사망자 수 계산
 parch_counts = titanic.groupby('Parch')['Survived'].value_counts().unstack().fillna(0)
