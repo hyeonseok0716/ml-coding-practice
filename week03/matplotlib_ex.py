@@ -219,3 +219,27 @@ violin_plot = plt.violinplot([titanic[titanic['Pclass'] == 1]['Age'],
                               titanic[titanic['Pclass'] == 2]['Age'],
                               titanic[titanic['Pclass'] == 3]['Age']],
                              showmeans=False, showmedians=True)
+
+plt.title('Violin Plot of Age by Pclass')
+plt.xlabel('Pclass')
+plt.ylabel('Age')
+
+# x축의 눈금 설정
+plt.xticks([1, 2, 3], ['1st Class', '2nd Class', '3rd Class'])
+
+# 범례 설정
+plt.legend(violin_plot['bodies'], ['1st Class', '2nd Class', '3rd Class'],
+           title='Pclass', loc="upper right")
+plt.savefig('Figure10.png')
+plt.close()
+
+## **에러 바: 요금의 평균과 표준편차 표현하기**
+
+# 각 부모와 자녀의 수에 대한 요금의 평균과 표쥰 편차 계산
+fare_means = titanic.groupby('Parch')['Fare'].mean()  # 평균
+print(fare_means, '\n')
+
+fare_std = titanic.groupby('Parch')['Fare'].std()     # 표준 편차
+print(fare_std)
+
+"""* 에러바는 데이터의 표준 편차를 나타내는 경우에는 길이가 길수록 해당 그룹의 데이터가 퍼져 있음을 의미"""
