@@ -5,7 +5,7 @@ import pandas as pd
 # 타이타닉 CSV 파일 불러오기
 titanic = pd.read_csv('3.1.1.titanic.csv')
 
-# head() 함수를 출력하여 타이타닉 데이터셋의 구성을 간단히 살펴보기
+# head( ) 함수를 출력하여 타이타닉 데이터셋의 구성을 간단히 살펴보기
 
 # 데이터 처음 5개의 행 출력
 print(titanic.head())
@@ -31,7 +31,7 @@ plt.ylabel('Survival Rate')
 plt.xticks([1, 2, 3])
 plt.grid(True)
 plt.savefig('Figure01.png')         # 결과를 그림파일로 저장
-plt.close()                         # 다음.Plot을 새로 그리기 위해 plt 닫기
+plt.close()                         # 다음 Plot을 새로 그리기 위해 plt 닫기
 
 """### **수직 막대 그래프 : 각 승선 항구에 따른 생존자 수 확인하기**"""
 
