@@ -2,7 +2,7 @@
 
 # 데이터 준비
 import numpy as np
-import pands as pd
+import pandas as pd
 
 housing = pd.read_csv('./week04/housing.csv')       # 오류 발생 시, ./housing.csv 파일로도 시도
 
@@ -15,3 +15,12 @@ housing["income_cat"] = pd.cut(housing["median_income"],
 
 strat_train_set, strat_test_set = train_test_split(
     housing, test_size=0.2, stratify=housing["income_cat"], random_state=42)
+
+for set_ in (strat_train_set, strat_test_set):
+    set_.drop("income_cat", axis=1, inplace=True)
+
+"""
+* 원본 훈련 세트로 복원하고 타깃을 분리
+* 'strat_train_set.drop()'은 지정한 열을 제외한 'strat_train_set'의 복사본을 만듦
+* 'inplace=True'로 지정하지 않은 한 'strat_train_set' 자체를 수정하지 않음
+"""
