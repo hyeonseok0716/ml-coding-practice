@@ -22,4 +22,12 @@ def main():
             cnt += 1
             getPostData(post, JsonResult, cnt)                # [CODE 3]
 
+        start = jsonResponse['start'] + jsonResponse['display']
+        jsonResponse = getNaverSearch(node, srcText, start, 100) # [CODE 2]
+
+    print('전체 검색 : %d 건' %total)
+
+    with open('%s_naver_%s.json' % (srcText, node), 'w', encoding= 'utf8') as outfile:
+        jsonFile = json.dumps(jsonResult, indent = 4, sort_keys = True,
+                              ensure_ascii = False)
         
