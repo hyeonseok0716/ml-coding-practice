@@ -43,7 +43,7 @@ def getNaverSearch(node, srcText, page_start, display):
     parameters = "?query=%s&start=%s&display=%s" % (urllib.parse.quote(srcText), page_start, display)
 
     url = base + node + parameters
-    responseDecode = getRequsetUrl(url)               #[CODE 1]
+    responseDecode = getRequestUrl(url)               #[CODE 1]
 
     if (responseDecode == None):
         return None
@@ -51,5 +51,7 @@ def getNaverSearch(node, srcText, page_start, display):
         return json.loads(responseDecode)
     
 
-def getRequsetUrl(url):
+def getRequestUrl(url):
+    req = urllib.request.Request(url)
 
+    req.add_header("X-Naver-Cli")
