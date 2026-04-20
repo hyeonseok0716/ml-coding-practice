@@ -39,4 +39,5 @@ def main():
 
 def getNaverSearch(ndoe, srcText, page_start, display):
     base = "https://openapi.naver.com/v1/search"
-    node = ""
+    node = "/%s.json" % node
+    
