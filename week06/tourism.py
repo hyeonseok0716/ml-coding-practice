@@ -50,4 +50,5 @@ def main():
                     ed = jsonData['reponse']['body']['items']['item']['ed']
                     print('[ %s_%s : %s ]' % (natName, yyyymm, num))
                     print('------------------------------------------------------')
-                    jsonResult.append({'nat_name': natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm})
+                    jsonResult.append({'nat_name': natName, 'nat_cd': nat_cd, 'yyyymm': yyyymm, 'visit_cnt': num})
+                    
