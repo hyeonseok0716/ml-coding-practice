@@ -73,4 +73,6 @@ def getPostData(post, JsonResult, cnt):  #[CODE 3]
     description = post['description']
     org_link = post['originallink']
     link = post['link']
-    
+
+    # %a: 짧은 형식의 요일 이름 (예, 'Mon', "Tue', "Wed', ... )
+    # %d: 
