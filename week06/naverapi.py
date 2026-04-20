@@ -68,4 +68,9 @@ def getRequestUrl(url):
         return None
     
 
-def getPostData(post, JsonResult, cnt): 
+def getPostData(post, JsonResult, cnt):  #[CODE 3]
+    title = post['title']
+    description = post['description']
+    org_link = post['originallink']
+    link = post['link']
+    
