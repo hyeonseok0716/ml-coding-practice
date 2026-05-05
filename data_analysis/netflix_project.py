@@ -55,4 +55,9 @@ netflix['age_group'] = netflix['rating']
 age_group_dic = {
     'G': 'All',
     'TV-G': 'All',
-    'TV-Y': 'All',}
+    'TV-Y': 'All',
+    'PG': 'Older Kids',
+    'TV-Y7': 'Older Kids',
+    'TV-Y7-FV': 'Older Kids',
+    'TV-PG': 'Older Kids',
+    'PG-13': 'Teens',}
