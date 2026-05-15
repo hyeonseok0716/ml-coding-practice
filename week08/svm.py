@@ -42,3 +42,11 @@ poly_kernel_svm_clf.fit(X, y)
 # 가우스 RBF 커널
 rbf_kernel_svm_clf = make_pipeline(StandardScaler(),
                                    SVC(kernel="rbf", gamma=5, C=0.001))
+rbf_kernel_svm_clf.fit(X, y)
+
+# SVM 회귀
+
+from sklearn.svm import LinearSVR
+
+# 이 세 줄은 간단한 선형 데이터셋을 생성합니다.
+np.random.seed(42)
