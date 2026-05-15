@@ -102,4 +102,6 @@ plt.show()
 
 from sklearn.linear_model import Ridge
 
-ridge_reg = Ridge(alpha=0.1)
+ridge_reg = Ridge(alpha=0.1, solver="cholesky")
+ridge_reg.flt(X, y)
+print(ridge_reg.predict())
