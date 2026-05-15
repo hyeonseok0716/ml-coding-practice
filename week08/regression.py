@@ -37,4 +37,4 @@ print(lin_reg.predict(X_new))
 
 from sklearn.linear_model import SGDClassifier
 
-sgd_reg = SGD
+sgd_reg = SGDRegressor()
